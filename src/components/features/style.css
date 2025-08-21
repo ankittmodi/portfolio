@@ -1,0 +1,145 @@
+.feature{
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid rgb(114, 112, 112);
+  padding-bottom: 20px;
+  padding-top: 3rem;
+  margin-top: 1.5rem;
+}
+.feature .banner-container1{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.feature h3{
+  text-transform: capitalize;
+  color:#a5123f;
+}
+.feature .cards{
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0, 1fr));
+  gap:2.5rem;
+}
+.description{
+  background: #1e2024;
+  height: auto;
+  padding:20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+  transform: translateY(1);
+}
+.group .card{
+  /* background-color:aqua; */
+  height: 18rem;
+  overflow-y: hidden;
+}
+.group .card-details{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap:10px;
+  transform: translateY(3.2rem);
+  transition: transform 0.3s ease !important;
+}
+.group1:hover .card-details{
+  transform: translateY(0);
+}
+.description span{
+  color:#a5123f;
+  font-size: 2.5rem;
+}
+.description h2{
+  font-size: 1.5rem;
+  color:#d6d2d2;
+}
+.description p{
+  font-size: 18px;
+  color: #d6d2d2;
+}
+.description .arrow{
+  color:#a5123f;
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+@media(max-width:1280px){/* xl */
+  .feature .cards{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0, 1fr));
+    gap:2.5rem;
+}
+.description{
+    height: auto;
+  }
+  .description .card{
+    height: auto;
+  }
+  .feature{
+    padding-bottom: 2.5rem;
+  }
+}
+@media(max-width:1024px){/* lgl */
+  
+}
+@media(max-width:992px){ /* lg */
+  .box{
+    padding: 1rem 2rem;
+  }
+  .feature .cards{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0, 1fr));
+    gap:2.5rem;
+  }
+  .description{
+    height: auto;
+  }
+  .description .card{
+    height: auto;
+  }
+  .feature{
+    padding-bottom: 2.5rem;
+  }
+}
+@media(max-width:768px){ /* mdl */
+  
+}
+@media(max-width:667px){  /* md */
+  .feature .cards{
+    display: grid;
+    grid-template-columns: repeat(1,minmax(0, 1fr));
+    
+}
+.description h2{
+  font-size: 2rem;
+  color:#d6d2d2;
+}
+.description p{
+  font-size: 24px;
+}
+}
+@media(max-width:500px){  /* sml */
+  
+}
+@media(max-width:350px){  /* sm */
+  .box{
+    padding:1rem 1.5rem;
+  }
+  .description{
+    height: auto;
+  }
+  .description .card{
+    height: auto;
+  }
+  .description .card h2{
+    font-size: 1.5rem;
+  }
+  .description .card p{
+    font-size: 1.2rem;
+  }
+}

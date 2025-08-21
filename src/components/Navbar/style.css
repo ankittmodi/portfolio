@@ -1,0 +1,130 @@
+.container{
+  width: 100% !important;
+  height: 100px;
+  background-color: #1e2024;
+  color:#FFFFFF;
+  padding: 1rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  position: sticky;
+  top:0;
+  z-index: 50;
+}
+.container .left{
+  width: 100%;
+}
+.container .left div{
+  width: 100%;
+}
+.container .left img{
+  /* width: 100%; */
+  height: 50px;
+  width: 50px;
+  max-width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.container .right ul{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.container .right ul li{
+  list-style: none;
+  font-size: 18px;
+  font-weight: 500;
+  color:#fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.container .right ul li:hover{
+  color:#a5123f;
+}
+.active{
+  color:#fff;
+}
+.menu-bar{
+  display: none;
+}
+ .menu-back{
+  width: 80%;
+  height: 100vh;
+  overflow: scroll;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #313235;
+  padding: 2rem 2rem;
+  
+ }
+ .menu-item{
+  position: relative;
+ }
+ .menu-back::-webkit-scrollbar{
+  display: none;
+ }
+ .menu-back span{
+  font-size: 1rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+ }
+ .menu-back span .menu-close{
+  font-size: 2rem;
+ }
+ .menu-back span .menu-close:hover{
+  color: #a5123f;
+ }
+@media(max-width:992px){
+  .container .left h2{
+    font-size: 1.3rem;
+  }
+  .container .right .main-box{
+    display: none;
+  }
+  .menu-bar{
+    display: block; 
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  .menu-back .menu-list{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    align-items: flex-start !important;
+  }
+  .menu-item{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 5px;
+  }
+  .menu-back .menu-list li{
+    cursor: pointer;
+  }
+  .menu-back .menu-list li:hover{
+    color:#a5123f;
+    cursor: pointer;
+  }
+}
+@media(max-width:960px){
+  .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+  .container .left{
+    width: 100%;
+  }
+}
+@media(max-width:350px){
+  .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+}

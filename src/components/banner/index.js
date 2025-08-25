@@ -21,6 +21,14 @@ const Banner = () => {
     deleteSpeed:10,
     delaySpeed:2000,
   })
+  const handleDownload = () => {
+  const link = document.createElement("a");
+  link.href = process.env.PUBLIC_URL + "/files/resume.pdf";
+  link.download = "resume.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
   return (
     <section id='home' className="banner ">
       <div className="banner-container">
@@ -33,7 +41,7 @@ const Banner = () => {
           <p>I craft responsive, user-friendly web experiences using React, JavaScript, and modern UI frameworks.
           Let's bring designs to life with clean code and smooth interactions.</p>
           <div className="btn-group">
-            <Button><Link>Download CV</Link></Button>
+            <Button onClick={handleDownload}><Link>Download CV</Link></Button>
             <Button><Link to='https://www.linkedin.com/in/ankit-kumar-22210a268/'>Hire Me Now!</Link></Button>
           </div>
           <div className="icon1">

@@ -31,7 +31,7 @@ const Education = () => {
               />
             </div>
           </div>
-          <div className="experience">
+          {/* <div className="experience">
             <div className="exp">
               <p>2025 -2026</p>
               <h2>Education</h2>
@@ -56,7 +56,7 @@ const Education = () => {
                 desc='The trraining provided by universities in order to prepare people to work in various sectors of the economy or areas of Culture.'
               /> 
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

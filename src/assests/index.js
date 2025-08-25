@@ -7,6 +7,7 @@ import projectFour from "./images/projects/projectFour.png";
 import contactImg from "./images/contact/contactImg.png"
 import react from "./images/projects/react.png";
 import css from "./images/projects/css.png";
+import java from "./images/projects/java.png";
 export {
   logo,
   bannerImg,
@@ -16,5 +17,6 @@ export {
   projectFour,
   contactImg,
   react,
-  css
+  css,
+  java
 };

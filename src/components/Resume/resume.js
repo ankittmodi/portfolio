@@ -20,8 +20,8 @@ const Resume = () => {
           <ul>
             <li onClick={()=>handleClick(0)} className={resumeData===0?"active":""}>Education</li>
             <li onClick={()=>handleClick(1)} className={resumeData===1?"active":""}>Professional Skills</li>
-            <li onClick={()=>handleClick(2)}className={resumeData===2?"active":""}>Experience</li>
-            <li onClick={()=>handleClick(3)}className={resumeData===3?"active":""}>Achievements</li>
+            {/* <li onClick={()=>handleClick(2)}className={resumeData===2?"active":""}>Experience</li> */}
+            <li onClick={()=>handleClick(2)}className={resumeData===2?"active":""}>Achievements</li>
           </ul>
         </div>
         {/* education details */}
@@ -33,11 +33,11 @@ const Resume = () => {
         {
           resumeData===1 && (<Skills />)
         }
-        {
+        {/* {
           resumeData===2 && (<Experience />)
-        }
+        } */}
         {
-          resumeData===3 && (<Achievements/>)
+          resumeData===2 && (<Achievements/>)
         }
       </div>
     </section>
